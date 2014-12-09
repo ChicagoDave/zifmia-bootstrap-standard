@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc function
  * @name zbsApp.controller:StoryCtrl
@@ -9,6 +7,8 @@
  */
 angular.module('zbsApp')
   .controller('StoryCtrl', ['$scope', 'gameService', function ($scope, gameService) {
+    'use strict';
+
     $scope.pageClass = 'page-story';
     $scope.viewName = 'Story';
     $scope.commandLine = ''; // not working!
