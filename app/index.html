@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- build:css(.tmp) styles/main.css -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+<body ng-app="zbsApp" ng-controller="MainCtrl">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{storyTitle}}</a>
+    </div>
+  </nav>
+
+  <div class="page {{pageClass}}" ng-view=""></div>
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div>
+      <a class="btn" href="#/"><span class="glyphicon glyphicon-list-alt"><p>story</p></span></a>
+      <a class="btn" href="#/maps"><span class="glyphicon glyphicon-globe"><p>maps</p></span></a>
+      <a class="btn" href="#/hints"><span class="glyphicon glyphicon-eye-open"><p>hints</p></span></a>
+      <a class="btn" href="#/help"><span class="glyphicon glyphicon-question-sign"><p>help</p></span></a>
+      <a class="btn" href="#/history"><span class="glyphicon glyphicon-header"><p>history</p></span></a>
+      <a class="btn" href="#/about"><span class="glyphicon glyphicon-font"><p>about</p></span></a>
+    </div>
+  </div>
+</div>
+
+<!-- build:js(.) scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/services/gameService.js"></script>
+<script src="scripts/controllers/story.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/maps.js"></script>
+<script src="scripts/controllers/help.js"></script>
+<script src="scripts/controllers/hints.js"></script>
+<script src="scripts/controllers/history.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

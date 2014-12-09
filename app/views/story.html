@@ -1,0 +1,7 @@
+<div ng-controller="StoryCtrl">
+  <div class="story-location-name">{{story.location}}</div>
+  <div class="story-content" ng-bind-html="story.content"></div>
+  <div class="command-line">
+    <input class="command-input" type="text" ng-bind="commandLine" ng-keydown="sendCommand($event)"/>
+  </div>
+</div>
